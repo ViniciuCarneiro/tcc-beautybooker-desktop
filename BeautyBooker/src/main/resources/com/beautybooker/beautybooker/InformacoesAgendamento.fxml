@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="639.0" style="-fx-background-color: #FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.beautybooker.beautybooker.controllers.InformacoesAgendamentoController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="17.0" prefHeight="41.0" prefWidth="681.0" style="-fx-background-color: #656ed3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="7.0" text="Detalhes do agendamento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bot_fechar" layoutX="595.0" layoutY="2.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="13.0" layoutY="89.0" text="Nome">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_nome" layoutX="78.0" layoutY="90.0" prefHeight="21.0" prefWidth="198.0" text="Vinicius Santos Carneiro">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="89.0" text="Email :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_email" layoutX="344.0" layoutY="90.0" prefHeight="21.0" prefWidth="271.0" text="Vinicius Santos Carneiro">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="119.0" text="WhatsApp:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_whatsapp" layoutX="95.0" layoutY="121.0" text="(62) 9 99263373">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="119.0" text="Data de Nascimento :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_dataNascimento" layoutX="445.0" layoutY="121.0" text="15/02/2001">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="149.0" text="Endereço">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_endereco" layoutX="95.0" layoutY="151.0" prefHeight="21.0" prefWidth="524.0" text="Rua tal">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="57.0" prefHeight="27.0" prefWidth="681.0" style="-fx-background-color: #656ed3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="Cliente" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="187.0" prefHeight="27.0" prefWidth="681.0" style="-fx-background-color: #656ed3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Serviço" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="277.0" prefHeight="27.0" prefWidth="681.0" style="-fx-background-color: #656ed3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Agendamento" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="txt_servico" layoutX="13.0" layoutY="219.0" prefHeight="21.0" prefWidth="385.0" text="Design de Sobrancelha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="249.0" prefHeight="21.0" prefWidth="62.0" text="Tempo: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_tempoServico" layoutX="73.0" layoutY="249.0" prefHeight="21.0" prefWidth="62.0" text="00:30:00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="236.0" prefHeight="21.0" prefWidth="55.0" text="Valor :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_valorServico" layoutX="533.0" layoutY="236.0" prefHeight="21.0" prefWidth="94.0" text="R$ 40,00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="315.0" prefHeight="21.0" prefWidth="124.0" text="Data Agendada :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="315.0" prefHeight="21.0" prefWidth="143.0" text="Horário Agendado :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="315.0" prefHeight="21.0" prefWidth="143.0" text="Horário Término :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="345.0" prefHeight="21.0" prefWidth="124.0" text="Valor Desconto :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="345.0" prefHeight="21.0" prefWidth="124.0" text="Valor Final :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_dataAgendada" layoutX="132.0" layoutY="316.0" prefHeight="21.0" prefWidth="124.0" text="29/11/2023">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_horarioAgendado" layoutX="370.0" layoutY="316.0" prefHeight="21.0" prefWidth="62.0" text="08:00:00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_horarioTermino" layoutX="565.0" layoutY="316.0" prefHeight="21.0" prefWidth="62.0" text="09:00:00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_valorDesconto" layoutX="132.0" layoutY="346.0" prefHeight="21.0" prefWidth="124.0" text="R$ 00,00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_valorFinal" layoutX="322.0" layoutY="346.0" prefHeight="21.0" prefWidth="124.0" text="R$ 40,00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="bot_cancelarAgendamento" layoutX="11.0" layoutY="389.0" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: df0000;" text="Cancelar Agendamento" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

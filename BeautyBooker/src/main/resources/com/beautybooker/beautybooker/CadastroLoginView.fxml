@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.beautybooker.beautybooker.controllers.CadastroLoginController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="1030.0" layoutX="221.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-185.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-282.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@image/Register%20Pagereg.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="542.0" layoutY="43.0" prefHeight="521.0" prefWidth="481.0" style="-fx-background-color: #ebefff;">
+         <children>
+            <Label layoutX="68.0" layoutY="4.0" text="Por favor preencha o formulário para se cadastrar!">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="46.0" text="Nome:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_nome" layoutX="71.0" layoutY="72.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <TextField fx:id="txt_sobrenome" layoutX="71.0" layoutY="132.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <TextField fx:id="txt_cpf" layoutX="72.0" layoutY="193.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <TextField fx:id="txt_email" layoutX="72.0" layoutY="253.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <JFXButton fx:id="btn_proximo" layoutX="75.0" layoutY="423.0" prefHeight="38.0" prefWidth="302.0" style="-fx-background-color: #656ed3; -fx-background-radius: 20;" text="Próximo" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="140.0" layoutY="480.0" text="Já tem uma conta?">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="txt_login" layoutX="263.0" layoutY="480.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="227.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="106.0" text="Sobrenome:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="167.0" text="CPF:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="294.0" text="Data de Nascimento:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_data_nascimento" layoutX="71.0" layoutY="320.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <Label layoutX="74.0" layoutY="354.0" text="Usuário:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_usuario" layoutX="71.0" layoutY="380.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+         </children>
+      </Pane>
+      <Pane layoutX="180.0" layoutY="425.0" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #ebefff;" />
+      <Label layoutX="171.0" layoutY="63.0" text="BeautyBooker" textFill="#656ed3">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane_proximo" layoutX="542.0" layoutY="43.0" prefHeight="479.0" prefWidth="481.0" style="-fx-background-color: #ebefff;" visible="false">
+         <children>
+            <Label layoutX="68.0" layoutY="4.0" text="Por favor preencha o formulário para se cadastrar!">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_cadastrar" layoutX="75.0" layoutY="213.0" prefHeight="38.0" prefWidth="302.0" style="-fx-background-color: #656ed3; -fx-background-radius: 20;" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="btn_voltar" fitHeight="38.0" fitWidth="28.0" layoutX="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-back-64.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txt_senha" layoutX="78.0" layoutY="67.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <PasswordField fx:id="txt_confirmarSenha" layoutX="78.0" layoutY="129.0" prefHeight="30.0" prefWidth="302.0" style="-fx-background-radius: 20; -fx-background-color: #ebefff; -fx-border-color: #656ed3; -fx-border-radius: 20;" />
+            <Label layoutX="81.0" layoutY="105.0" text="Confirmar Senha:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="43.0" text="Senha:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="check_admin" checkedColor="#656ed3" layoutX="82.0" layoutY="176.0" text="Administrador" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

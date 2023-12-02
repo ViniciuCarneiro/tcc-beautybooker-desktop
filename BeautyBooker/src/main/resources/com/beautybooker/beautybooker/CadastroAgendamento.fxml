@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="672.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.beautybooker.beautybooker.controllers.CadastroAgendamentoController">
+   <children>
+      <Label layoutX="30.0" layoutY="85.0" text="Cliente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="busca_cliente" layoutX="27.0" layoutY="117.0" prefHeight="37.0" prefWidth="614.0" promptText="Buscar Cliente" style="-fx-border-color: #9da0a4; -fx-border-radius: 15; -fx-background-radius: 15;" />
+      <ListView fx:id="lista_clientes" layoutX="27.0" layoutY="156.0" prefHeight="90.0" prefWidth="614.0" style="-fx-border-color: #FFFF;" />
+      <ImageView fitHeight="28.0" fitWidth="24.0" layoutX="597.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="busca_servico" layoutX="27.0" layoutY="282.0" prefHeight="37.0" prefWidth="614.0" promptText="Buscar Serviço" style="-fx-border-color: #9da0a4; -fx-border-radius: 15; -fx-background-radius: 15;" />
+      <Label layoutX="30.0" layoutY="250.0" text="Serviço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lista_servicos" layoutX="27.0" layoutY="322.0" prefHeight="90.0" prefWidth="614.0" style="-fx-border-color: #FFFF;" />
+      <TextField fx:id="busca_profissional" layoutX="27.0" layoutY="447.0" prefHeight="37.0" prefWidth="614.0" promptText="Buscar Profissional" style="-fx-border-color: #9da0a4; -fx-border-radius: 15; -fx-background-radius: 15;" />
+      <Label layoutX="30.0" layoutY="415.0" text="Profissional">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lista_profissional" layoutX="27.0" layoutY="487.0" prefHeight="90.0" prefWidth="614.0" style="-fx-border-color: #FFFF;" />
+      <JFXButton fx:id="bot_proximo" layoutX="516.0" layoutY="591.0" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #656ed3;" text="Próximo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="30.0" layoutY="14.0" prefHeight="41.0" prefWidth="470.0" style="-fx-background-color: #656ed3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="7.0" text="Cadastro de Agendamentos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bot_fechar" layoutX="627.0" layoutY="2.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="28.0" fitWidth="24.0" layoutX="597.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="24.0" layoutX="597.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneFinal" layoutX="236.0" layoutY="39.0" prefHeight="604.0" prefWidth="672.0" style="-fx-background-color: #FFFF;" visible="false" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <TextField fx:id="text_horarioAgendado" layoutX="192.0" layoutY="246.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="194.0" layoutY="220.0" text="Horário Agendado">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_dataAgendada" layoutX="28.0" layoutY="243.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="30.0" layoutY="218.0" text="Data Agendada">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_cliente" disable="true" layoutX="29.0" layoutY="58.0" prefHeight="25.0" prefWidth="614.0" />
+            <Label layoutX="29.0" layoutY="32.0" text="Cliente">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_servico" disable="true" layoutX="29.0" layoutY="118.0" prefHeight="25.0" prefWidth="614.0" />
+            <Label layoutX="29.0" layoutY="92.0" text="Serviço">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_profissional" disable="true" layoutX="29.0" layoutY="178.0" prefHeight="25.0" prefWidth="614.0" />
+            <Label layoutX="29.0" layoutY="152.0" text="Profissional">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_horarioTermino" disable="true" layoutX="352.0" layoutY="246.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="354.0" layoutY="220.0" text="Horário Termino">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bot_verificarDisponibilidade" layoutX="481.0" layoutY="240.0" prefHeight="33.0" prefWidth="165.0" style="-fx-background-color: #656ed3;" text="Verificar Disponibilidade" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="text_valorServico" disable="true" layoutX="28.0" layoutY="313.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="30.0" layoutY="288.0" text="Valor Serviço">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_valorDesconto" layoutX="194.0" layoutY="313.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="196.0" layoutY="288.0" text="Valor Desconto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_valorFinal" disable="true" layoutX="355.0" layoutY="313.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="357.0" layoutY="288.0" text="Valor Final">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="bot_salvarAgendamento" layoutX="527.0" layoutY="367.0" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #656ed3;" text="Salvar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
