@@ -63,8 +63,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
 ## Contato
-Autor: Vinicius Santos Carneiro
-GitHub: ViniciuCarneiro
-Homepage: https://github.com/ViniciuCarneiro/tcc-api#readme
-
-**Aproveite a codificação!**
+**Autor:** Vinicius Santos Carneiro  
+**GitHub:** [ViniciuCarneiro](https://github.com/ViniciuCarneiro)  
+**Homepage:** [https://github.com/ViniciuCarneiro/tcc-api#readme](https://github.com/ViniciuCarneiro/tcc-api#readme)
