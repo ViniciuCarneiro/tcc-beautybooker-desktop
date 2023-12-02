@@ -107,7 +107,6 @@ public class LoginController implements Initializable {
     }
 
     private boolean validateCredentials(String usuario, String senha) {
-        // Validação das credenciais
         if (usuario.isEmpty() || senha.isEmpty()) {
             System.out.println("Preencha todos os campos.");
             return false;

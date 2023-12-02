@@ -35,16 +35,8 @@ public class Application extends javafx.application.Application {
             CadastroLoginController cadastroLoginController = loader.getController();
             cadastroLoginController.setPrimaryStage(primaryStage);
 
-            // Acesse o controlador da cena de cadastro (se necessário)
-//            CadastroLoginController cadastroController = loader.getController();
-
-            // Configure o palco para exibir a nova cena
             primaryStage.setScene(new Scene(root));
 
-            // Se desejar, você pode passar informações para o controlador da cena de cadastro
-            // cadastroController.setSomeData(someData);
-
-            // Mostre a nova cena
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -59,16 +51,8 @@ public class Application extends javafx.application.Application {
             LoginController loginController = loader.getController();
             loginController.setPrimaryStage(primaryStage);
 
-            // Acesse o controlador da cena de cadastro (se necessário)
-//            CadastroLoginController cadastroController = loader.getController();
-
-            // Configure o palco para exibir a nova cena
             primaryStage.setScene(new Scene(root));
 
-            // Se desejar, você pode passar informações para o controlador da cena de cadastro
-            // cadastroController.setSomeData(someData);
-
-            // Mostre a nova cena
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -122,7 +106,6 @@ public class Application extends javafx.application.Application {
     }
 
     public static String getURLImagemInfo() {
-        // Obtenha a URL da imagem usando um caminho relativo
         URL imageUrl = Application.class.getResource("/com/beautybooker/beautybooker/image/icons8-information-50.png");
 
         if (imageUrl != null) {
@@ -134,7 +117,6 @@ public class Application extends javafx.application.Application {
     }
 
     public static String getURLImagemAgendamentoConcluir() {
-        // Obtenha a URL da imagem usando um caminho relativo
         URL imageUrl = Application.class.getResource("/com/beautybooker/beautybooker/image/icons8-ok-50.png");
 
         if (imageUrl != null) {

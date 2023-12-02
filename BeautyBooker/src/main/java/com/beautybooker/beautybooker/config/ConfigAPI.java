@@ -69,7 +69,6 @@ public class ConfigAPI {
         connection.setRequestMethod(method);
         connection.setRequestProperty("Content-Type", "application/json");
 
-        // Adicione o cabeçalho de autorização Bearer
         if (authToken != null && !authToken.isEmpty()) {
             connection.setRequestProperty("Authorization", "Bearer " + authToken);
         }

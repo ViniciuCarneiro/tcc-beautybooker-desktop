@@ -398,31 +398,25 @@ public class HomeController implements Initializable {
 
     private String getDataInicioSemana(String data) {
         try {
-            // Converta a string de data para um objeto Date
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             Date dataConvertida = sdf.parse(data);
 
             Calendar cal = Calendar.getInstance();
 
-            // Defina a data de início da semana como a data fornecida
             cal.setTime(dataConvertida);
 
-            // Defina o primeiro dia da semana como segunda-feira
             cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
 
-            // Obtenha a data de início da semana
             Date dataInicioSemana = cal.getTime();
 
-            // Adicione 6 dias para obter a data de término da semana (domingo)
             cal.add(Calendar.DATE, 6);
             Date dataFimSemana = cal.getTime();
 
-            // Formate as datas conforme necessário
             String dataInicioFormatada = sdf.format(dataInicioSemana);
 
             return dataInicioFormatada;
         } catch (Exception e) {
-            e.printStackTrace(); // Trate a exceção conforme necessário
+            e.printStackTrace();
             return null;
         }
     }
@@ -436,22 +430,18 @@ public class HomeController implements Initializable {
 
             cal.setTime(dataConvertida);
 
-            // Defina o primeiro dia da semana como segunda-feira
             cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
 
-            // Obtenha a data de início da semana
             Date dataInicioSemana = cal.getTime();
 
-            // Adicione 6 dias para obter a data de término da semana (domingo)
             cal.add(Calendar.DATE, 6);
             Date dataFimSemana = cal.getTime();
 
-            // Formate as datas conforme necessário
             String dataFimFormatada = sdf.format(dataFimSemana);
 
             return dataFimFormatada;
         } catch (Exception e) {
-            e.printStackTrace(); // Trate a exceção conforme necessário
+            e.printStackTrace();
             return null;
         }
     }
@@ -769,8 +759,8 @@ public class HomeController implements Initializable {
         int segundos = Integer.parseInt(partes[2]);
         int totalMinutos = (int) (horas * 60 + minutos + Math.round(segundos / 60.0));
 
-        double larguraBase = 40; // Largura base para 30 minutos
-        double larguraPorHora = 230.0; // Aumento de largura por hora
+        double larguraBase = 40;
+        double larguraPorHora = 230.0;
         return larguraBase + (totalMinutos / 60.0) * larguraPorHora;
     }
 
